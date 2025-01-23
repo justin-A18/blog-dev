@@ -28,7 +28,7 @@ const EmblaCarousel = (props) => {
                 />
                 <div class='flex flex-col items-center mb-2'>
                   <p class='text-lg font-bold text-white'>{item.name}</p>
-                  <span class='text-sm font-bold text-[#83d6e7]'>
+                  <span class='text-sm font-bold text-secondary'>
                     {item.role}
                   </span>
                   <span class='text-gray-400 text-sm'>{item.about}</span>
@@ -39,7 +39,7 @@ const EmblaCarousel = (props) => {
                       href={item.github}
                       target='_blank'
                       rel='noopener noreferrer'
-                      class='text-gray-400 hover:text-[#83d6e7]'
+                      class='text-gray-400 hover:text-secondary'
                       aria-label='GitHub profile'
                     >
                       <GithubIcon />
@@ -50,7 +50,7 @@ const EmblaCarousel = (props) => {
                       href={item.linkedin}
                       target='_blank'
                       rel='noopener noreferrer'
-                      class='text-gray-400 hover:text-[#83d6e7]'
+                      class='text-gray-400 hover:text-secondary'
                       aria-label='LinkedIn profile'
                     >
                       <LinkedinIcon />
@@ -61,7 +61,7 @@ const EmblaCarousel = (props) => {
                       href={item.website}
                       target='_blank'
                       rel='noopener noreferrer'
-                      class='text-gray-400 hover:text-[#83d6e7]'
+                      class='text-gray-400 hover:text-secondary'
                       aria-label='Personal website'
                     >
                       <WebsiteIcon />
@@ -72,7 +72,7 @@ const EmblaCarousel = (props) => {
                       href={item.twitter}
                       target='_blank'
                       rel='noopener noreferrer'
-                      class='text-gray-400 hover:text-[#83d6e7]'
+                      class='text-gray-400 hover:text-secondary'
                       aria-label='Personal website'
                     >
                       <TwitterIcon />
@@ -83,7 +83,7 @@ const EmblaCarousel = (props) => {
                       href={item.instagram}
                       target='_blank'
                       rel='noopener noreferrer'
-                      class='text-gray-400 hover:text-[#83d6e7]'
+                      class='text-gray-400 hover:text-secondary'
                       aria-label='Personal website'
                     >
                       <InstagramIcon />
