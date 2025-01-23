@@ -13,9 +13,9 @@ const { name, count } = Astro.props
 
 <a
   href={`/tags/${name.toLowerCase()}`}
-  class='block p-6 bg-gray-800 rounded-lg border border-[#368beb] hover:border-[#83D6E7] transition-colors'
+  class='block p-6 bg-gray-800 rounded-lg border border-primary hover:border-[#83D6E7] transition-colors'
 >
-  <h2 class='text-2xl font-bold text-[#368beb] mb-2'>{name}</h2>
+  <h2 class='text-2xl font-bold text-primary mb-2'>{name}</h2>
   <div class='text-gray-400 space-y-1'>
     <p class='font-medium'>
       {count.total} elemento{count.total !== 1 ? 's' : ''}
