@@ -6,12 +6,12 @@ draft: false
 category: 'C#'
 author:
   name: 'Angel Mendoza'
-  avatar: ''
+  avatar: 'https://i.ibb.co/1KFg1tW/1730512763644.jpg'
   role: 'Fullstack Developer'
   github: 'https://github.com/niiyant'
   linkedin: 'https://www.linkedin.com/in/angel-mendoza-ramirez/'
-  website: ''
-  about: ''
+  website: 'https://x.com/catdev0'
+  about: 'Desarrollador de C#, orientado el Fullstack y el CI/CD, aprendiendo nuevas cosas cada dia.'
 ---
 ## Tabla de Contenidos
 
