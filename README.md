@@ -56,7 +56,7 @@ Para añadir nuevos artículos y recursos al blog, sigue estos pasos:
    description: 'Descripción corta del artículo'
    date: 'YYYY-MM-DD'
    draft: false
-   author: 'Nombre del Autor'
+   author: '0N-nombre-a'
    tags: 'etiqueta'
    ---
    Contenido del artículo en formato Markdown.
@@ -89,20 +89,18 @@ export const resources: Resource[] = [
 
 ## 👥 Añadir Autores
 
-Para aparecer en la sección de Autores, añade tus datos dentro de los archivos Markdown de artículos (`src/content/articles/`). Asegúrate de incluir la información del autor en el siguiente formato:
+Para aparecer en la sección de Autores, añade tus datos creando un nuevo archivo `.yaml` dentro del directorio de autores (`src/content/authors/`). Asegúrate de incluir la información del autor en el siguiente formato:
 
-```markdown
----
-author:
-  name: 'Nombre del Autor'
-  avatar: 'URL del Avatar'
-  role: 'Rol del Autor'
-  github: 'URL de GitHub'
-  linkedin: 'URL de LinkedIn'
-  website: 'URL del porfolio web'
-  about: 'Descripción corta del Autor'
----
+```yaml
+name: 'Nombre del Autor'
+avatar: 'URL del Avatar'
+role: 'Rol del Autor'
+github: 'URL de GitHub'
+linkedin: 'URL de LinkedIn'
+website: 'URL del porfolio web'
+about: 'Descripción corta del Autor'
 ```
+El nombre del archivo actualmente usa como prefijo un número ordinal, primer nombre y primera letra de tu apellido, todo separado por guión medio: `0N-nombre-a`, por ejemplo, `01-john-d` (John Doe).
 
 **¡Gracias por visitar Share IT! 🙌**
 
