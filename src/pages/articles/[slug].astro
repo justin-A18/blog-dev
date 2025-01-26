@@ -1,7 +1,7 @@
 ---
 import CollaboratorCard from '@components/CollaboratorCard.astro'
 import Layout from '@layouts/Layout.astro'
-import { getCollection } from 'astro:content'
+import { getCollection, getEntry } from 'astro:content'
 import { formatDate } from 'src/utils/dates'
 
 export async function getStaticPaths() {
@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props
+const author = await getEntry(article.data.author)
 const { Content } = await article.render()
 ---
 
@@ -31,6 +32,6 @@ const { Content } = await article.render()
       <p class='text-gray-300 mt-2'>{article.data.description}</p>
     </header>
     <Content />
-    <CollaboratorCard {...article.data.author} />
+    <CollaboratorCard {...author.data} />
   </article>
 </Layout>
