@@ -3,15 +3,10 @@ import CollaboratorCard from '@components/CollaboratorCard.astro'
 import Layout from '@layouts/Layout.astro'
 import { getCollection } from 'astro:content'
 
+const authors = await getCollection('authors')
 const articles = await getCollection('articles', ({ data }) => {
   return !data.draft
 })
-
-const authors = [...articles.map((article) => article.data.author)]
-
-const uniqueAuthors = Array.from(
-  new Set(authors.map((author) => author.name))
-).map((name) => authors.find((author) => author.name === name))
 ---
 
 <Layout title='Autores | Share IT' showBackButton>
@@ -25,8 +20,8 @@ const uniqueAuthors = Array.from(
 
     <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
       {
-        uniqueAuthors.map(
-          (author) =>
+        authors.map(
+          ({id, data: author}) =>
             author && (
               <CollaboratorCard
                 name={author.name}
@@ -38,7 +33,7 @@ const uniqueAuthors = Array.from(
                 about={author.about}
                 articleCount={
                   articles.filter(
-                    (article) => article.data.author.github === author.github
+                    (article) => article.data.author.id === id
                   ).length
                 }
               />
