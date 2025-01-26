@@ -4,14 +4,7 @@ description: 'Consejos de cómo mejorar nuestra lógica, pero también cómo enf
 date: '2024-11-21'
 draft: false
 category: 'Desarrollo'
-author:
-  name: 'Victor Quiñones'
-  avatar: 'https://i.ibb.co/Dzd33xD/profile-perfil.jpg'
-  role: 'Frontend Developer'
-  github: 'https://github.com/vctorqui'
-  linkedin: 'https://linkedin.com/in/victorqui'
-  website: 'https://victorqui-portfolio.netlify.app/'
-  about: 'Especializado en crear interfaces web eficientes, intuitivas y escalables, he descubierto la importancia y el poder transformador de la tecnología en nuestra vida cotidiana.'
+author: 01-victor-q
 ---
 
 ---

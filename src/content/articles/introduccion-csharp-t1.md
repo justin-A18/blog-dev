@@ -4,14 +4,7 @@ description: 'Sintaxis básica y estructura de un programa en C#.'
 date: '2025-01-22'
 draft: false
 category: 'C#'
-author:
-  name: 'Angel Mendoza'
-  avatar: 'https://i.ibb.co/1KFg1tW/1730512763644.jpg'
-  role: 'Fullstack Developer'
-  github: 'https://github.com/niiyant'
-  linkedin: 'https://www.linkedin.com/in/angel-mendoza-ramirez/'
-  website: 'https://x.com/catdev0'
-  about: 'Desarrollador de C#, orientado el Fullstack y el CI/CD, aprendiendo nuevas cosas cada dia.'
+author: 04-angel-m
 ---
 ## Tabla de Contenidos
 
