@@ -1,0 +1,7 @@
+.talent-card {
+  display: flex;
+}
+
+.talent-card.hidden-card {
+  display: none;
+}
