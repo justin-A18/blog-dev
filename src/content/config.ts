@@ -1,4 +1,4 @@
-import { defineCollection, z } from 'astro:content'
+import { defineCollection, z, reference } from 'astro:content'
 
 const authorSchema = z.object({
   name: z.string(),
@@ -17,7 +17,7 @@ const articleSchema = z.object({
   date: z.string().transform((str) => new Date(str + 'T00:00:00')),
   draft: z.boolean().default(false),
   category: z.string(),
-  author: authorSchema,
+  author: reference("authors"),
 })
 
 const articles = defineCollection({
@@ -25,6 +25,12 @@ const articles = defineCollection({
   schema: articleSchema,
 })
 
+const authors = defineCollection({
+  type: 'data',
+  schema: authorSchema,
+})
+
 export const collections = {
   articles,
+  authors
 }
