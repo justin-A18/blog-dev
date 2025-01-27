@@ -1,7 +1,7 @@
 ---
 title: 'Operador Ternario ?: en C#'
 description: 'El operador ternario es un operador condicional en C# como en múltiples lenguajes de programación. En este artículo puedes aprender sobre su uso en C# y como aprovecharlo en tus proyectos.'
-date: '2025-01-26'
+date: '2025-01-27'
 draft: false
 category: 'C#'
 author: 05-brandon-v
