@@ -4,6 +4,7 @@ import LinkedinIcon from '@icons/LinkedinIcon.astro'
 import WebIcon from '@icons/WebIcon.astro'
 
 interface Props {
+  id: string
   name: string
   area: string
   experience: number
@@ -16,6 +17,7 @@ interface Props {
 }
 
 const {
+  id,
   name,
   area,
   experience,
@@ -26,6 +28,8 @@ const {
   portfolio,
   avatar,
 } = Astro.props
+
+const mainSkills = skills.slice(0, 5)
 ---
 
 <article
@@ -53,7 +57,7 @@ const {
 
   <div class='mt-4 flex flex-wrap gap-2'>
     {
-      skills.map((skill) => (
+      mainSkills.map((skill) => (
         <span class=' text-gray-300 px-2 py-1 rounded text-sm'>{skill}</span>
       ))
     }
@@ -99,5 +103,10 @@ const {
         </a>
       )
     }
+    <a
+      href={`/talent/${id}`}
+      class='text-gray-400 hover:text-secondary'
+      aria-label='Ver perfil'>Ver perfil</a
+    >
   </div>
 </article>
