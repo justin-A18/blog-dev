@@ -3,9 +3,10 @@ title: 'Operador Ternario ?: en C#'
 description: 'El operador ternario es un operador condicional en C# como en múltiples lenguajes de programación. En este artículo puedes aprender sobre su uso en C# y como aprovecharlo en tus proyectos.'
 date: '2025-01-27'
 draft: false
-category: 'C#'
+category: 'CSharp'
 author: 05-brandon-v
 ---
+
 ![Elvis Presley con un signo de interrogación en el cabello y dos puntos en los ojos](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zrcylun1av05izzpftee.png)
 
 ## ¿Qué es el operador ternario?
@@ -18,7 +19,7 @@ Retomando, el operador ternario nos ayuda a definir de forma corta y/o reducida 
 
 ## Sintaxis del operador ternario
 
-Este operador siempre debe constar de 3 operandos o elementos  (de ahí su nombre):
+Este operador siempre debe constar de 3 operandos o elementos (de ahí su nombre):
 
 1. **Expresión condicional:** Es la evaluación lógica que esperamos realizar (resultado de true o false).
 2. **La primera declaración:** La expresión, resultado o valor que esperamos obtener si la expresión condicional da como resultado verdadero (true)
@@ -26,7 +27,7 @@ Este operador siempre debe constar de 3 operandos o elementos  (de ahí su nombr
 
 Viéndose de la siguiente manera: `expresion_condicional ? primera_declaracion : segunda_declaracion` o `condicion ? consecuencia ? alternativa`.
 
-De esta forma, si `expresion_condicional` resulta en verdadero (true) entonces la `primera_declaracion` es el valor de retorno, pero, si `expresion_condicional` es falso (false), el operador retorna la `segunda_declaracion`. 
+De esta forma, si `expresion_condicional` resulta en verdadero (true) entonces la `primera_declaracion` es el valor de retorno, pero, si `expresion_condicional` es falso (false), el operador retorna la `segunda_declaracion`.
 
 Debemos tener en cuenta que el uso del operador ternario en lugar de una declaración if-else puede ayudar a tener un código más limpio, conciso y reducido, pero debemos tener cuidado de no realizar múltiples condiciones anidadas u operaciones complejas con el operador, por ello, es típicamente usado para calcular un valor o realizar una selección simple inmediata en los casos en que necesitemos realizarlo condicionalmente. Algunas veces es mucho mejor utilizar las sentencias if-else si las evaluaciones lógicas que estamos realizando son muy complejas, el operador ternario puede complicar la lectura del código y complicar el seguimiento del flujo de ejecución del programa e incluso hacer complejas futuras refactorizaciones.
 
@@ -81,7 +82,7 @@ Console.WriteLine(mensaje);
 
 De esta forma podemos evaluar múltiples condiciones anidando diversas expresiones que permitan obtener el valor correspondiente según el resultado de estas.
 
-Debemos tener en cuenta que el operador ternario es asociativo por la derecha, lo que nos indica que la sentencia u ocurrencia del operador que vamos a aplicar primero es desde la derecha, es decir, la ultima expresión ternaria que se encuentre al extremo derecho. Por lo tanto, si tenemos una expresión de la forma `a ? b : c ? d : e` la evaluamos como `a ? b : (c ? d : e)` y no como `(a ? b : c) ? d : e`. Esto significa que el resultado de evaluar  `(c ? d : e)` va a ser parte de la evaluación `a ? b`, por lo que, `a ? b : resultado_c_con_d_y_e`. Esto ocurre porque necesitamos conocer los resultados de cada expresión para poder determinar la siguiente evaluación que se realice en el operador ternario, si evaluamos la primera expresión no tenemos seguridad de que el valor devuelto va a ser un booleano, por lo tanto, las expresiones anidadas no podrían suceder de manera adecuada.
+Debemos tener en cuenta que el operador ternario es asociativo por la derecha, lo que nos indica que la sentencia u ocurrencia del operador que vamos a aplicar primero es desde la derecha, es decir, la ultima expresión ternaria que se encuentre al extremo derecho. Por lo tanto, si tenemos una expresión de la forma `a ? b : c ? d : e` la evaluamos como `a ? b : (c ? d : e)` y no como `(a ? b : c) ? d : e`. Esto significa que el resultado de evaluar `(c ? d : e)` va a ser parte de la evaluación `a ? b`, por lo que, `a ? b : resultado_c_con_d_y_e`. Esto ocurre porque necesitamos conocer los resultados de cada expresión para poder determinar la siguiente evaluación que se realice en el operador ternario, si evaluamos la primera expresión no tenemos seguridad de que el valor devuelto va a ser un booleano, por lo tanto, las expresiones anidadas no podrían suceder de manera adecuada.
 
 ## Expresión condicional ref
 
