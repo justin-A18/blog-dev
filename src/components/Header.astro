@@ -9,6 +9,7 @@ const navItems = [
   { href: '/resources', text: 'Recursos' },
   { href: '/collaborators', text: 'Autores' },
   { href: '/aboutUs', text: 'Sobre nosotros' },
+  // { href: '/talent', text: 'Talento' },
 ]
 ---
 
@@ -34,6 +35,6 @@ const navItems = [
         ))
       }
     </ul>
-    <MobileMenu />
+    <MobileMenu navItems={navItems} />
   </nav>
 </header>

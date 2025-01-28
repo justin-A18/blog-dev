@@ -1,14 +1,11 @@
 ---
 import './styles.css'
 
-const navItems = [
-  { href: '/', text: 'Inicio' },
-  { href: '/articles/1', text: 'Artículos' },
-  { href: '/tags', text: 'Tags' },
-  { href: '/resources', text: 'Recursos' },
-  { href: '/collaborators', text: 'Autores' },
-  { href: '/aboutUs', text: 'Sobre nosotros' },
-]
+interface Props {
+  navItems: { href: string; text: string }[]
+}
+
+const { navItems } = Astro.props
 ---
 
 <label class='popup md:hidden inline-block'>
