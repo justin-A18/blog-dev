@@ -136,6 +136,6 @@ export const admins = [
     about: 'Admin',
     role: 'Professional Fisherman',
     avatar: '/images/fernando-avatar.jpeg',
-    twitter: 'h',
+    twitter: 'https://x.com/f_l_cl',
   },
 ]
