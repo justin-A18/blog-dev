@@ -13,6 +13,7 @@ const articles = await getCollection('articles', ({ data }) => {
 const latestArticles = articles
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 2)
+
 const latestResources = resources.slice(0, 2)
 
 export const prerender = true
@@ -68,7 +69,7 @@ export const prerender = true
             description={article.data.description}
             category={article.data.category}
             date={article.data.date}
-            href={`/articles/${article.slug}`}
+            href={`/articles/${article.id}`}
           />
         ))
       }

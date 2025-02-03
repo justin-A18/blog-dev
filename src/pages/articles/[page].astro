@@ -29,7 +29,7 @@ const {
 } = page as {
   data: Array<{
     data: { title: string; description: string; category: string; date: Date }
-    slug: string
+    id: string
   }>
   currentPage: number
   lastPage: number
@@ -60,7 +60,7 @@ const {
             description={article.data.description}
             category={article.data.category}
             date={article.data.date}
-            href={`/articles/${article.slug}`}
+            href={`/articles/${article.id}`}
           />
         ))
       )
